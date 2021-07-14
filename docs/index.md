@@ -1,6 +1,6 @@
 ---
 hero:
-  title: Site Name
+  title: 文档整理
   desc: dumi site app example
   actions:
     - text: Getting Started

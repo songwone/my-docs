@@ -1,6 +1,6 @@
 ---
 hero:
-  title: 111
+  title: 文档整理
   desc: dumi site app 脚手架
   actions:
     - text: 快速上手
