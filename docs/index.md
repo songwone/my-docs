@@ -1,7 +1,7 @@
 ---
 hero:
   title: 文档整理
-  desc: dumi site app example
+  desc: 这是我的文档站点
   actions:
     - text: Getting Started
       link: /getting-started
@@ -17,5 +17,3 @@ features:
     desc: Balabala
 footer: Open-source MIT Licensed | Copyright © 2020<br />Powered by [dumi](https://d.umijs.org)
 ---
-
-## Hello dumi!
