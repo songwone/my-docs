@@ -37,11 +37,11 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
-        ACCESS_TOKEN: ${{ secrets.DEPLOY_KEY }}
+        ACCESS_TOKEN: ${{ secrets.DOCPUBLISH }}
         BRANCH: master
         FOLDER: dist
-        REPOSITORY_NAME: hefeng6500/hefeng6500.github.io
-        TARGET_FOLDER: blog
+        REPOSITORY_NAME: songwone/songwone.github.io
+        TARGET_FOLDER: /
 
       env:
         CI: true
