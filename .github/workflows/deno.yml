@@ -24,7 +24,7 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Use Node.js 15.x
       uses: actions/setup-node@v1
       with:
@@ -35,7 +35,7 @@ jobs:
         yarn
         yarn build
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@4.5.0
       with:
         ACCESS_TOKEN: ${{ secrets.DOCPUBLISH }}
         BRANCH: master
