@@ -37,7 +37,7 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
-        ACCESS_TOKEN: ${{ secrets.DOCPUBLISH }}
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: master
         FOLDER: dist
         REPOSITORY_NAME: songwone/songwone.github.io
