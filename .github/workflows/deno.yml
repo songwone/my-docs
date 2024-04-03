@@ -24,7 +24,7 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v1
     - name: Use Node.js 15.x
       uses: actions/setup-node@v1
       with:
@@ -35,10 +35,10 @@ jobs:
         yarn
         yarn build
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.5.0
+      uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         ACCESS_TOKEN: ${{ secrets.DOCPUBLISH }}
-        BRANCH: master
+        BRANCH: main
         FOLDER: dist
         REPOSITORY_NAME: songwone/songwone.github.io
         TARGET_FOLDER: /
