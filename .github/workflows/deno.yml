@@ -14,6 +14,8 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ${{ matrix.os }} # runs a test on Ubuntu, Windows and macOS
@@ -36,8 +38,6 @@ jobs:
         yarn build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.7.1
-      permissions:
-        contents: write
       with:
         ACCESS_TOKEN: ${{ secrets.DOCPUBLISH }}
         BRANCH: main
