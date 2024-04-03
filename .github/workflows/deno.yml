@@ -36,6 +36,8 @@ jobs:
         yarn build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.7.1
+      permissions:
+        contents: write
       with:
         ACCESS_TOKEN: ${{ secrets.DOCPUBLISH }}
         BRANCH: main
