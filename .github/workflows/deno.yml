@@ -7,7 +7,8 @@
 # For more information see: https://github.com/denolib/setup-deno
 
 name: release blog to songwone.github.io
-
+permissions:
+  contents: write
 on:
   push:
     branches: [main]
